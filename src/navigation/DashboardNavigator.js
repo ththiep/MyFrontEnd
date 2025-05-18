@@ -1,10 +1,11 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import CampaignView from '../features/campaign/campaignView';
+import { Routes, Route, Navigate } from 'react-router-dom';
+import DashboardContainer from '../features/dashboard/dashboardContainer';
 
 const DashboardNavigator = () => (
   <Routes>
-    <Route path="/home" element={<CampaignView />} />
+    <Route path="/" element={<Navigate to="/dashboard" replace />} />
+    <Route path="/dashboard" element={<DashboardContainer />} />
   </Routes>
 );
 

@@ -38,6 +38,7 @@ export const useAuthViewModel = (mode = 'login') => {
             console.log('Register success', response);
         }
         if (response.status === 'success') {
+          localStorage.setItem('token', response.data.password);
           setIsAuthenticated(true);
           navigate('/dashboard');
         } else {
