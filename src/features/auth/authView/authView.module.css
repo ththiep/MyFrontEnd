@@ -1,0 +1,108 @@
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.leftSide {
+  flex: 1.5;
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  color: white;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.leftSide h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.leftSide p {
+  font-size: 1.2rem;
+  opacity: 0.95;
+  max-width: 500px;
+  margin-bottom: 2rem;
+}
+
+.leftSide img {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.rightSide {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 3rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.05);
+}
+
+form {
+  width: 100%;
+  max-width: 400px;
+}
+
+form h2 {
+  font-size: 2rem;
+  color: #1f2937; /* gray-800 */
+  margin-bottom: 1rem;
+}
+
+.formGroup {
+  margin-bottom: 0.75rem;
+}
+
+.inputPassword {
+  width: 100%;
+  font-size: 1rem;
+  border: 1.5px solid #d1d5db;
+  border-radius: 0.5rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  outline: none;
+}
+
+.inputPassword:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25);
+}
+
+.buttonRegister {
+  width: 100%;
+  padding: 0.9rem 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.buttonLogin {
+  background-color: #3b82f6;
+}
+
+.buttonLogin:hover {
+  background-color: #2563eb;
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.4);
+}
+
+.buttonRegister {
+  background-color: #10b981;
+}
+
+.buttonRegister:hover {
+  background-color: #059669;
+  box-shadow: 0 6px 16px rgba(5, 150, 105, 0.4);
+}
