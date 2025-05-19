@@ -14,10 +14,11 @@ const AuthView = ({ onLogin, onChange, formData, errors, mode = 'login' }) => {
                 <h2 className="text-3xl font-bold mb-4">Chào mừng bạn đến với hệ thống</h2>
                 <p className="text-lg mb-6">Quản lý chiến dịch quảng cáo Facebook hiệu quả, tập trung và dễ sử dụng.</p>
                 <img
-                    src="https://source.unsplash.com/500x300/?digital,marketing"
-                    alt="Banner"
-                    className="rounded shadow"
+                src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80"
+                alt="Facebook Banner"
+                className="rounded shadow"
                 />
+
             </div>
 
             <div className={styles.rightSide}>
